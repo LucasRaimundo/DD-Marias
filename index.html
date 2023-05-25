@@ -1,121 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> 
+<html>
+  <head>
+    <meta charset="utf-8" />
     <title>Delicias de Maria</title>
-</head>
-<body>
-
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-
-        <div class="form-img">
-            <img src="" alt="">
-
+      <h1 class="form-title">Faça seu Pedido</h1>
+      <form action="#">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="fullName">Primeiro Nome</label>
+            <input type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Enter Full Name"/>
+          </div>
+          <div class="user-input-box">
+            <label for="username">Ultimo nome</label>
+            <input type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Enter Username"/>
+          </div>
+          <div class="user-input-box">
+            <label for="email">Email</label>
+            <input type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter Email"/>
+          </div>
+          <div class="user-input-box">
+            <label for="phoneNumber">Celular</label>
+            <input type="text"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    placeholder="Enter Phone Number"/>
+          </div>
+          <div class="user-input-box-end">
+            <label for="password">Endereço</label>
+            <input type="password"
+                    id="end"
+                    name="password"
+                    placeholder="Enter Password"/>
+          </div>
+          
         </div>
-
-        <div class="form">
-            <form action="#">
-                <div class="form-header">
-                    <div class="title">
-                        <h1>Faça seu pedido</h1>
-                    </div>
-                    <div class="login-button">
-                        <button><a href="#">Enviar</a></button>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <div class="input-box">
-                        <label for="firstname">Primeiro Nome</label>
-                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="lastname">Sobrenome</label>
-                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
-                    </div>
-                    <div class="input-box">
-                        <label for="email">Endereço</label>
-                        <input id="email" type="address" name="address" placeholder="Digite seu endereço" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="number">Celular</label>
-                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
-                    </div>
-
-            
-
-                </div>
-
-                <div class="gender-inputs">
-                    <div class="gender-title">
-                        <h6>Sabores</h6>
-                    </div>
-
-                    <div class="gender-group">
-                        <div class="gender-input">
-                            <input id="female" type="radio" name="gender">
-                            <label for="female">Brigadeiro</label>
-                        </div>
-
-                        <div class="gender-input">
-                            <input id="male" type="radio" name="gender">
-                            <label for="male">Beijinho</label>
-                        </div>
-
-                        <div class="gender-input">
-                            <input id="others" type="radio" name="gender">
-                            <label for="others">Ganache</label>
-                        </div>
-
-                        <div class="gender-input">
-                            <input id="none" type="radio" name="gender">
-                            <label for="none">Limão</label>
-                        </div>
-
-                        <div class="gender-input">
-                            <input id="others" type="radio" name="gender">
-                            <label for="others">Maracujá</label>
-                        </div>
-
-                        <div class="gender-input">
-                            <input id="others" type="radio" name="gender">
-                            <label for="others">Morango</label>
-                        </div>
-
-                        <div class="gender-input">
-                            <input id="others" type="radio" name="gender">
-                            <label for="others">Ovomaltine</label>
-                        </div>
-
-                        <div class="gender-input">
-                            <input id="others" type="radio" name="gender">
-                            <label for="others">Paçoca</label>
-                        </div>
-
-                        <div class="gender-input">
-                            <input id="others" type="radio" name="gender">
-                            <label for="others">Nutella (acrescimo de R$10,00)</label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="continue-button">
-                    <button><a href="#">Continuar</a> </button>
-                </div>
-            </form>
-
-
-
-
-
-
-
+        <div class="gender-details-box">
+          <span class="gender-title">Sabores</span>
+          <div class="gender-category">
+            <input type="checkbox" name="gender" id="Brigadeiro">
+            <label for="male">Brigadeiro</label>
+            <input type="checkbox" name="gender" id="Maracujá">
+            <label for="female">Maracujá</label>
+            <input type="checkbox" name="gender" id="Ganache">
+            <label for="other">Ganache</label>
+            <input type="checkbox" name="gender" id="Beijinho">
+            <label for="other">Beijinho</label>
+            <input type="checkbox" name="gender" id="Limao">
+            <label for="other">Limão</label><br><br>
+            <input type="checkbox" name="gender" id="Morango">
+            <label for="other">Morango</label>
+            <input type="checkbox" name="gender" id="Ovomaltine">
+            <label for="other">Ovomaltine</label>
+            <input type="checkbox" name="gender" id="Paçoca">
+            <label for="other">Paçoca</label>
+            <input type="checkbox" name="gender" id="Nutella">
+            <label for="other">Nutella (+ R$10,00)</label>
+          </div>
+        </div>
+        <div class="form-submit-btn">
+          <input type="submit" value="Register">
+        </div>
+      </form>
     </div>
-    
-</body>
+  </body>
 </html>
