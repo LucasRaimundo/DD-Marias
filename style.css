@@ -17,6 +17,7 @@ body{
 .container{
     width: 100%;
     max-width: 650px;
+
     background: rgba(0, 0, 0, 0.5);
     padding: 28px;
     margin: 0 28px;
@@ -102,8 +103,22 @@ body{
     margin-left: 30px;
     margin-right: 20px;
 }
+.choice3{
+    margin-left: 45px;
+    margin-right: 45px;
+}
 
 .gender-title1{
+    color:white;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+   
+    margin-right: 20px;
+    
+}
+
+.gender-title2{
     color:white;
     font-size: 18px;
     font-weight: 600;
