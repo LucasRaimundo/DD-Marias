@@ -13,7 +13,7 @@
       <form action="pages/next1.html">
         <div class="main-user-info">
           <div class="user-input-box-end">
-            <label for="password">Nome Completo</label>
+            <label for="password">Nome Completo *</label>
             <input type="name"
                     id="nome"
                     name="name"
@@ -22,22 +22,22 @@
 
           <br>
           <div class="user-input-box">
-            <label for="email">Email</label>
+            <label for="email">E-mail *</label>
             <input type="email"
                     id="email"
                     name="email"
                     placeholder="E-mail"/>
           </div>
           <div class="user-input-box">
-            <label for="phoneNumber">Celular</label>
+            <label for="phoneNumber">Celular *</label>
             <input type="text"
                     id="phoneNumber"
                     name="phoneNumber"
                     placeholder="(xx) xxxxx-xxxx"/>
           </div>
           <div class="user-input-box-end">
-            <label for="password">Endereço</label>
-            <input type="password"
+            <label for="password">Endereço *</label>
+            <input type="text"
                     id="end"
                     name="password"
                     placeholder="Endereço"/>
@@ -48,8 +48,21 @@
               
         <div class="form-submit-btn">
           
-          <input type="submit" value="Próximo" >
+          <input type="submit" value="Próximo" id="submit-btn" disabled>
         </div>
+
+        <script>
+          const endInput = document.getElementById('end');
+const submitBtn = document.getElementById('submit-btn');
+
+endInput.addEventListener('input', function() {
+  if (endInput.value.trim() === '') {
+    submitBtn.disabled = true;
+  } else {
+    submitBtn.disabled = false;
+  }
+});
+        </script>
 
         
       </form>
