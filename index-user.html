@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Delicias de Maria</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/img/Design sem nome.ico" type="image/png">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="form-title">Faça seu Pedido</h1>
+      <form action="pages/next1.html">
+        <div class="main-user-info">
+          <div class="user-input-box-end">
+            <label for="password">Nome Completo *</label>
+            <input type="name"
+                    id="nome"
+                    name="name"
+                    placeholder="Nome Completo"/>
+          </div>
+
+          <br>
+          <div class="user-input-box">
+            <label for="email">E-mail *</label>
+            <input type="email"
+                    id="email"
+                    name="email"
+                    placeholder="E-mail"/>
+          </div>
+          <div class="user-input-box">
+            <label for="phoneNumber">Celular *</label>
+            <input type="text"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    placeholder="(xx) xxxxx-xxxx"/>
+          </div>
+          <div class="user-input-box-end">
+            <label for="password">Endereço *</label>
+            <input type="text"
+                    id="end"
+                    name="password"
+                    placeholder="Endereço"/>
+          </div>
+          
+        </div>
+     
+              
+        <div class="form-submit-btn">
+          
+          <input type="submit" value="Próximo" id="submit-btn" disabled>
+        </div>
+
+        <script>
+          const endInput = document.getElementById('end');
+const submitBtn = document.getElementById('submit-btn');
+
+endInput.addEventListener('input', function() {
+  if (endInput.value.trim() === '') {
+    submitBtn.disabled = true;
+  } else {
+    submitBtn.disabled = false;
+  }
+});
+        </script>
+
+        
+      </form>
+    </div>
+  </body>
+</html>
