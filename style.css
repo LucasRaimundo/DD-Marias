@@ -13,6 +13,11 @@ body{
     background: url(assets/img/tbac.avif);
     background-size: cover;
 }
+.img{
+    margin-left: 170px;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
 
 .container{
     width: 100%;
@@ -179,6 +184,12 @@ body{
     .container{
         min-width: 280px;
     }
+
+   .img{
+    margin-left: 0;
+   margin-top: 15px;   
+   margin-bottom: 0;
+   }
 
     .user-input-box{
         margin-bottom: 15px;
