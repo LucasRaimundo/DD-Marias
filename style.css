@@ -14,11 +14,11 @@ body{
     background-size: cover;
 }
 .img{
-    margin-left: 170px;
-    margin-bottom: 0;
-    margin-top: 15px;
-    align-items: flex-end;
+    position: absolute;
+    left: 42%;
+    top: 50px;
 }
+
 
 .container{
     width: 100%;
@@ -187,9 +187,10 @@ body{
     }
 
    .img{
-    margin-left: 0;
-   margin-top: 15px;   
-   margin-bottom: 0;
+        
+        left: 15%;
+        
+    
    }
 
     .user-input-box{
@@ -214,5 +215,13 @@ body{
 
     .main-user-info::-webkit-scrollbar{
         width: 0;
+    }
+
+    .form-submit-btn{
+        margin-top: 0px;
+    }
+
+    .user-input-box-end{
+        margin-bottom: 0;
     }
 }
