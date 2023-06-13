@@ -187,10 +187,8 @@ body{
     }
 
    .img{
-        
-        left: 15%;
-        
-    
+      left: 500px;
+      position: relative;
    }
 
     .user-input-box{
