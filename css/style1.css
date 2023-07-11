@@ -14,7 +14,7 @@ body{
     background-size: cover;
 }
 
-.img{
+img{
     position: absolute;
     left: 42%;
     top: 80px;
@@ -99,6 +99,11 @@ body{
         margin-bottom: 15px;
         width: 100%;
     }
+
+    img{
+        left: 19%;
+        top: -7px;
+     }
 
     .user-input-box:nth-child(2n){
         justify-content: space-between;
