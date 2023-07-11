@@ -187,8 +187,8 @@ img{
     }
 
    img{
-      left: 27%;
-      top: 10px;
+      left: 24%;
+      top: 1px;
    }
 
     .user-input-box{
@@ -225,45 +225,4 @@ img{
 }
 
 
-@media(max-width: 300px){
-    .container{
-        min-width: 280px;
-    }
 
-   img{
-      left: 25%;
-      top: 15px;
-   }
-
-    .user-input-box{
-        margin-bottom: 15px;
-        width: 100%;
-    }
-
-    .user-input-box:nth-child(2n){
-        justify-content: space-between;
-    }
-
-    .gender-category{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .main-user-info{
-        max-height: 380px;
-        overflow: auto;
-    }
-
-    .main-user-info::-webkit-scrollbar{
-        width: 0;
-    }
-
-    .form-submit-btn{
-        margin-top: 0px;
-    }
-
-    .user-input-box-end{
-        margin-bottom: 0;
-    }
-}

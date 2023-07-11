@@ -24,7 +24,7 @@
             <input type="name"
                     id="nome"
                     name="name"
-                    placeholder="Nome Completo"/>
+                    placeholder="Nome Completo" required="required"/>
           </div>
 
           <br>
@@ -33,21 +33,21 @@
             <input type="email"
                     id="email"
                     name="email"
-                    placeholder="E-mail"/>
+                    placeholder="E-mail" required="required"/>
           </div>
           <div class="user-input-box">
             <label for="phoneNumber">Celular *</label>
             <input type="text"
                     id="phoneNumber"
                     name="phoneNumber"
-                    placeholder="(xx) xxxxx-xxxx"/>
+                    placeholder="(xx) xxxxx-xxxx" required="required"/>
           </div>
           <div class="user-input-box-end">
             <label for="password">Endereço *</label>
             <input type="text"
                     id="end"
                     name="password"
-                    placeholder="Endereço"/>
+                    placeholder="Endereço" required="required"/>
           </div>
           
         </div>
@@ -58,19 +58,7 @@
           <input type="submit" value="Próximo" id="submit-btn" disabled>
         </div>
 
-        <script>
-          const endInput = document.getElementById('end');
-const submitBtn = document.getElementById('submit-btn');
-
-endInput.addEventListener('input', function() {
-  if (endInput.value.trim() === '') {
-    submitBtn.disabled = true;
-  } else {
-    submitBtn.disabled = false;
-  }
-});
-        </script>
-
+        
         
       </form>
     </div>
