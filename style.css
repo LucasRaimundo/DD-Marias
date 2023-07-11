@@ -13,7 +13,7 @@ body{
     background: url(assets/img/tbac.avif);
     background-size: cover;
 }
-.img{
+img{
     position: absolute;
     left: 42%;
     top: 50px;
@@ -186,9 +186,9 @@ body{
         min-width: 280px;
     }
 
-   .img{
-      left: 55px;
-      top: -35px;
+   img{
+      left: 27%;
+      top: 10px;
    }
 
     .user-input-box{
